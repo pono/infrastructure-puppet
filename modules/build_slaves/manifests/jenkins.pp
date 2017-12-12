@@ -5,7 +5,8 @@ include apt
 # jenkins class for the build slaves.
 class build_slaves::jenkins (
   $nexus_password   = '',
-  $npmrc_password    = '',
+
+  $npmrc_password    = '',            
   $jenkins_pub_key  = '',
   $gsr_user = '',
   $gsr_pw = '',
