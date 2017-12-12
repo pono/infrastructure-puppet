@@ -7,10 +7,10 @@ class build_slaves (
   class { "build_slaves::install::${::asfosname}::${::asfosrelease}":
   }
 
-  package {
+  package {         
     $distro_packages:
       ensure => latest,
-  }
+      }
 
   python::pip { 'Flask' :
     pkgname => 'Flask';
