@@ -1,0 +1,10 @@
+language: ruby
+
+rvm:
+ - 2.3
+
+install:
+  - bundle install
+
+script:
+  - bundle exec puppet-lint --no-nested_classes_or_defines-check --no-autoloader_layout-check modules/ environments/
