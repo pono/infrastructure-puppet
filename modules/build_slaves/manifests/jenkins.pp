@@ -1,11 +1,10 @@
 #/etc/puppet/modules/build_slaves/manifests/jenkins.pp
 
-
 include apt
 
 # jenkins class for the build slaves.
 class build_slaves::jenkins (
-  $nexus_password   = '',
+    $nexus_password   = '',
   $npmrc_password    = '',
   $jenkins_pub_key  = '',
   $gsr_user = '',
